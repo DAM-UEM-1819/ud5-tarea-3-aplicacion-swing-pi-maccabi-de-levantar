@@ -35,10 +35,9 @@ public class PRINCIPAL extends JFrame {
 	private JButton btnNewButton_1;
 	private JButton btnModificar;
 	private JButton btnBaja;
-	private JScrollPane scrollPane_1;
-	private JTable table_1;
 	private JLabel lblNewLabel;
 	private JTextField txtAlumnos;
+	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -112,31 +111,31 @@ public class PRINCIPAL extends JFrame {
 		btnNewButton.setBounds(562, 16, 92, 41);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblAjustes = new JLabel("Ajustes");
-		lblAjustes.setBounds(589, 56, 46, 14);
+		JLabel lblAjustes = new JLabel("Cerrar Sesion");
+		lblAjustes.setBounds(572, 56, 65, 14);
 		contentPane.add(lblAjustes);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(30, 112, 636, 203);
+		scrollPane.setBounds(30, 112, 750, 203);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"Simulador 1", "10:00", "12:00", "Consultas", "Medicina", "EN-M13", "Fermin Trujillo", null},
-				{"Simulador 3", "11:00", "13:30", "Parto", "Medicina", "FR-6", "Javier Moroto", null},
-				{"Simulador 4", "10:30", "12:00", "Simulaci\u00F3n", "Medicina", "EN-P9", "Estela Reynolds", null},
-				{"Simulador 2", "13:30", "15:30", "Consultas", "Medicina", "EN-M13", "Amador Rivas", null},
-				{"Simulador 1", "14:00", "15:30", "Simulaci\u00F3n", "Medicina", "RX-TN12", "Lola Reynolds", null},
-				{null, null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null, null},
+				{"Simulador 1", "10:00", "12:00", "Consultas", "Medicina", "EN-M13", "Fermin Trujillo", null, "ME-45", "30"},
+				{"Simulador 3", "11:00", "13:30", "Parto", "Medicina", "FR-6", "Javier Moroto", null, "PS-34", "12"},
+				{"Simulador 4", "10:30", "12:00", "Simulaci\u00F3n", "Medicina", "EN-P9", "Estela Reynolds", null, "EN-45", "15"},
+				{"Simulador 2", "13:30", "15:30", "Consultas", "Medicina", "EN-M13", "Amador Rivas", null, "ME-10", "35"},
+				{"Simulador 1", "14:00", "15:30", "Simulaci\u00F3n", "Medicina", "RX-TN12", "Lola Reynolds", null, "EN-43", null},
+				{null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null},
 			},
 			new String[] {
-				"SALA", "HORA DE INICIO", "HORA DE FIN", "ACTIVIDAD", "TITULACI\u00D3N", "GRUPO", "PROFESOR", "ACTOR"
+				"SALA", "HORA DE INICIO", "HORA DE FIN", "ACTIVIDAD", "TITULACI\u00D3N", "GRUPO", "PROFESOR", "ACTOR", "Codigo grupo", "N\u00BA de alumnos"
 			}
 		));
 		scrollPane.setViewportView(table);
@@ -149,43 +148,43 @@ public class PRINCIPAL extends JFrame {
 		
 		txtHoraInicio = new JTextField();
 		txtHoraInicio.setText("Hora Inicio");
-		txtHoraInicio.setBounds(112, 326, 74, 20);
+		txtHoraInicio.setBounds(112, 326, 68, 20);
 		contentPane.add(txtHoraInicio);
 		txtHoraInicio.setColumns(10);
 		
 		txtHoraFin = new JTextField();
 		txtHoraFin.setText("Hora Fin");
 		txtHoraFin.setColumns(10);
-		txtHoraFin.setBounds(189, 326, 79, 20);
+		txtHoraFin.setBounds(182, 326, 68, 20);
 		contentPane.add(txtHoraFin);
 		
 		txtActividad = new JTextField();
 		txtActividad.setText("Actividad");
 		txtActividad.setColumns(10);
-		txtActividad.setBounds(270, 326, 74, 20);
+		txtActividad.setBounds(252, 326, 79, 20);
 		contentPane.add(txtActividad);
 		
 		txtTitulacin = new JTextField();
 		txtTitulacin.setText("Titulaci\u00F3n");
 		txtTitulacin.setColumns(10);
-		txtTitulacin.setBounds(349, 326, 74, 20);
+		txtTitulacin.setBounds(331, 326, 68, 20);
 		contentPane.add(txtTitulacin);
 		
 		txtGrupo = new JTextField();
 		txtGrupo.setText("Grupo");
 		txtGrupo.setColumns(10);
-		txtGrupo.setBounds(425, 326, 79, 20);
+		txtGrupo.setBounds(409, 326, 68, 20);
 		contentPane.add(txtGrupo);
 		
 		txtProfesor = new JTextField();
 		txtProfesor.setText("Profesor");
 		txtProfesor.setColumns(10);
-		txtProfesor.setBounds(509, 326, 74, 20);
+		txtProfesor.setBounds(485, 326, 68, 20);
 		contentPane.add(txtProfesor);
 		
 		textField_8 = new JTextField();
 		textField_8.setColumns(10);
-		textField_8.setBounds(589, 326, 74, 20);
+		textField_8.setBounds(631, 326, 68, 20);
 		contentPane.add(textField_8);
 		
 		button_2 = new JButton("");
@@ -205,31 +204,6 @@ public class PRINCIPAL extends JFrame {
 		btnBaja.setBounds(562, 387, 89, 23);
 		contentPane.add(btnBaja);
 		
-		scrollPane_1 = new JScrollPane();
-		scrollPane_1.setBounds(693, 112, 108, 203);
-		contentPane.add(scrollPane_1);
-		
-		table_1 = new JTable();
-		table_1.setModel(new DefaultTableModel(
-			new Object[][] {
-				{"EM-45", "40"},
-				{"KP-32", "35"},
-				{"EM-45", "40"},
-				{"TM-15", "40"},
-				{"GM-354", "20"},
-				{"HM-435", "30"},
-				{"BU-25", "42"},
-				{"CY-12", "43"},
-				{"NJ-15", "35"},
-				{"EM-45", "40"},
-				{"BU-25", "42"},
-			},
-			new String[] {
-				"Grupo", "N\u00BA de alumnos"
-			}
-		));
-		scrollPane_1.setViewportView(table_1);
-		
 		lblNewLabel = new JLabel("Seleccione tabla a buscar:");
 		lblNewLabel.setBounds(667, 357, 134, 14);
 		contentPane.add(lblNewLabel);
@@ -239,5 +213,14 @@ public class PRINCIPAL extends JFrame {
 		txtAlumnos.setBounds(661, 376, 86, 20);
 		contentPane.add(txtAlumnos);
 		txtAlumnos.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setColumns(10);
+		textField_1.setBounds(706, 326, 74, 20);
+		contentPane.add(textField_1);
+		
+		JButton btnSubidaDeDatos = new JButton("Subida de Datos");
+		btnSubidaDeDatos.setBounds(719, 52, 116, 23);
+		contentPane.add(btnSubidaDeDatos);
 	}
 }

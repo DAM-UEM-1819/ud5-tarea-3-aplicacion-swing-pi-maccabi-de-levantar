@@ -85,9 +85,9 @@ public class ACTIVIDAD extends JFrame {
 		textField.setBounds(463, 70, 86, 20);
 		panel.add(textField);
 		
-		JLabel label_1 = new JLabel("Ajustes");
-		label_1.setBounds(589, 56, 46, 14);
-		panel.add(label_1);
+		JLabel lblCerrarSesin = new JLabel("Cerrar Sesi\u00F3n");
+		lblCerrarSesin.setBounds(572, 56, 79, 14);
+		panel.add(lblCerrarSesin);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(30, 112, 636, 138);
