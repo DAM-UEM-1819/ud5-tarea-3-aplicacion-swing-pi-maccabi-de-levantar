@@ -19,7 +19,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
 
-public class LOGIN extends JFrame {
+public class LOGIN extends JFrame implements ActionListener {
 
 	private JPanel contentPane;
 	private JTextField textField;
@@ -46,7 +46,6 @@ public class LOGIN extends JFrame {
 	 * Create the frame.
 	 */
 	public LOGIN() {
-		setBackground(new Color(0, 750, 455));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 563, 401);
 		contentPane = new JPanel();
@@ -66,7 +65,7 @@ public class LOGIN extends JFrame {
 		label_1.setBounds(91, 125, 109, 22);
 		contentPane.add(label_1);
 		
-		Label label_2 = new Label("Contraseña: ");
+		Label label_2 = new Label("ContraseÃ±a: ");
 		label_2.setBounds(91, 201, 62, 22);
 		contentPane.add(label_2);
 		
@@ -100,5 +99,11 @@ public class LOGIN extends JFrame {
 		lblNewLabel_1.setBounds(343, 34, 166, 189);
 		contentPane.add(lblNewLabel_1);
 		ImageIcon imagen;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }

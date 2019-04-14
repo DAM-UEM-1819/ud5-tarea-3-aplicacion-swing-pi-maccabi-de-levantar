@@ -17,7 +17,7 @@ import java.awt.Choice;
 import javax.swing.JTextField;
 import java.awt.Button;
 
-public class MAÑANA extends JFrame {
+public class MANANA extends JFrame {
 
 	private JPanel contentPane;
 	private JTable table;
@@ -30,7 +30,7 @@ public class MAÑANA extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MAÑANA frame = new MAÑANA();
+					MANANA frame = new MANANA();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,8 +41,9 @@ public class MAÑANA extends JFrame {
 
 	/**
 	 * Create the frame.
+	 * @return 
 	 */
-	public MAÑANA() {
+	public void MAÃ‘ANA() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 973, 328);
 		contentPane = new JPanel();
