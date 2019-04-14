@@ -87,16 +87,16 @@ public class REGISTRO extends JFrame {
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"09/04/2019", "19:30", "2", "1235", "0123", null},
-				{"09/04/2019", "17:30", "2", "1223", "0123", null},
-				{"09/04/2019", "15:30", "2", "1267", "0123", null},
-				{"09/04/2019", "11:30", "2", "6547", "0123", null},
-				{"09/04/2019", "18:30", "2", "1756", "0123", null},
-				{"09/04/2019", "12:30", "2", "1564", "0123", null},
-				{"09/04/2019", "13:30", "2", "1434", "0123", null},
+				{"09/04/2019", "19:30", "2", "1235", "0123", null, null},
+				{"09/04/2019", "17:30", "2", "1223", "0123", null, null},
+				{"09/04/2019", "15:30", "2", "1267", "0123", null, null},
+				{"09/04/2019", "11:30", "2", "6547", "0123", null, null},
+				{"09/04/2019", "18:30", "2", "1756", "0123", null, null},
+				{"09/04/2019", "12:30", "2", "1564", "0123", null, null},
+				{"09/04/2019", "13:30", "2", "1434", "0123", null, null},
 			},
 			new String[] {
-				"Fecha", "Horas", "Horas de profesor", "C\u00F3digo de grupo", "C\u00F3digo", "Actor"
+				"Fecha", "Horas", "Horas de profesor", "C\u00F3digo de grupo", "C\u00F3digo", "Actor", "Simulador"
 			}
 		));
 		scrollPane.setViewportView(table);
@@ -110,25 +110,25 @@ public class REGISTRO extends JFrame {
 		txtHoras = new JTextField();
 		txtHoras.setText("Horas..");
 		txtHoras.setColumns(10);
-		txtHoras.setBounds(138, 261, 98, 20);
+		txtHoras.setBounds(125, 261, 78, 20);
 		panel.add(txtHoras);
 		
 		txtHorasDeProfesor = new JTextField();
 		txtHorasDeProfesor.setText("Horas de profesor");
 		txtHorasDeProfesor.setColumns(10);
-		txtHorasDeProfesor.setBounds(237, 261, 98, 20);
+		txtHorasDeProfesor.setBounds(206, 261, 98, 20);
 		panel.add(txtHorasDeProfesor);
 		
 		txtCdigoDeGrupo = new JTextField();
 		txtCdigoDeGrupo.setText("C\u00F3digo de grupo");
 		txtCdigoDeGrupo.setColumns(10);
-		txtCdigoDeGrupo.setBounds(337, 261, 104, 20);
+		txtCdigoDeGrupo.setBounds(305, 261, 78, 20);
 		panel.add(txtCdigoDeGrupo);
 		
 		txtCdigo = new JTextField();
 		txtCdigo.setText("C\u00F3digo");
 		txtCdigo.setColumns(10);
-		txtCdigo.setBounds(446, 261, 98, 20);
+		txtCdigo.setBounds(387, 261, 86, 20);
 		panel.add(txtCdigo);
 		
 		JButton button_5 = new JButton("");
@@ -162,5 +162,9 @@ public class REGISTRO extends JFrame {
 		txtAlumnos.setBounds(580, 348, 86, 20);
 		panel.add(txtAlumnos);
 		txtAlumnos.setColumns(10);
+		
+		JButton btnListado = new JButton("Listado");
+		btnListado.setBounds(292, 80, 89, 23);
+		panel.add(btnListado);
 	}
 }
