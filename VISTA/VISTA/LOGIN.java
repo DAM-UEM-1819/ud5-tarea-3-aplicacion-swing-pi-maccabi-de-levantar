@@ -19,12 +19,14 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
 
-public class LOGIN extends JFrame implements ActionListener {
+public class LOGIN extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JButton btnNewButton;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -46,6 +48,7 @@ public class LOGIN extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public LOGIN() {
+		setBackground(new Color(0, 750, 455));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 563, 401);
 		contentPane = new JPanel();
@@ -65,7 +68,7 @@ public class LOGIN extends JFrame implements ActionListener {
 		label_1.setBounds(91, 125, 109, 22);
 		contentPane.add(label_1);
 		
-		Label label_2 = new Label("ContraseÃ±a: ");
+		Label label_2 = new Label("Contraseña: ");
 		label_2.setBounds(91, 201, 62, 22);
 		contentPane.add(label_2);
 		
@@ -100,10 +103,17 @@ public class LOGIN extends JFrame implements ActionListener {
 		contentPane.add(lblNewLabel_1);
 		ImageIcon imagen;
 	}
+	public void setContro(Controlador contro) {
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 }

@@ -26,6 +26,8 @@ public class REGISTRO extends JFrame {
 	private JTextField txtCdigo;
 	private JTable table;
 	private JTextField txtAlumnos;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -167,4 +169,17 @@ public class REGISTRO extends JFrame {
 		btnListado.setBounds(292, 80, 89, 23);
 		panel.add(btnListado);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 }

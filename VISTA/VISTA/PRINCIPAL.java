@@ -38,6 +38,8 @@ public class PRINCIPAL extends JFrame {
 	private JLabel lblNewLabel;
 	private JTextField txtAlumnos;
 	private JTextField textField_1;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -223,4 +225,17 @@ public class PRINCIPAL extends JFrame {
 		btnSubidaDeDatos.setBounds(719, 52, 116, 23);
 		contentPane.add(btnSubidaDeDatos);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 }

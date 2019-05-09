@@ -12,6 +12,8 @@ import javax.swing.JButton;
 public class SALIR extends JFrame {
 
 	private JPanel contentPane;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -48,5 +50,18 @@ public class SALIR extends JFrame {
 		btnSalir.setBounds(266, 179, 89, 23);
 		contentPane.add(btnSalir);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }

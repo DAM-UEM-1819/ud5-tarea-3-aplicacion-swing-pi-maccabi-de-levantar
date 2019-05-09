@@ -28,6 +28,8 @@ public class ASIGNATURA extends JFrame {
 	private JTextField textField_5;
 	private JTextField textField_6;
 	private JTable table;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -170,5 +172,18 @@ public class ASIGNATURA extends JFrame {
 		textField_6.setBounds(580, 348, 86, 20);
 		panel.add(textField_6);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }

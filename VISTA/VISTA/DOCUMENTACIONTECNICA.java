@@ -15,6 +15,8 @@ public class DOCUMENTACIONTECNICA extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -57,4 +59,17 @@ public class DOCUMENTACIONTECNICA extends JFrame {
 		btnImprimir.setBounds(208, 227, 89, 23);
 		contentPane.add(btnImprimir);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 }

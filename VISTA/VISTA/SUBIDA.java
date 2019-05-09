@@ -16,6 +16,8 @@ public class SUBIDA extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -68,4 +70,17 @@ public class SUBIDA extends JFrame {
 		lblSubida.setBounds(158, 22, 98, 32);
 		contentPane.add(lblSubida);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 }

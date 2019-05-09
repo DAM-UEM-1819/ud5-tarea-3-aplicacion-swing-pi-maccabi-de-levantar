@@ -33,6 +33,8 @@ public class PROFESORES extends JFrame {
 	private JTextField txtTitulacin;
 	private JTextField txtTlf;
 	private JTextField txtRelacin;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -205,5 +207,18 @@ public class PROFESORES extends JFrame {
 		txtRelacin.setBounds(696, 261, 72, 20);
 		panel.add(txtRelacin);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }

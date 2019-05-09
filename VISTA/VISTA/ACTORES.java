@@ -29,6 +29,8 @@ public class ACTORES extends JFrame {
 	private JTextField textField_6;
 	private JTable table;
 	private JTextField txtComplexin;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -177,5 +179,18 @@ public class ACTORES extends JFrame {
 		txtComplexin.setBounds(548, 261, 103, 20);
 		panel.add(txtComplexin);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }

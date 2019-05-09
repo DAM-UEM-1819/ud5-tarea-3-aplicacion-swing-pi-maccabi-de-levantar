@@ -21,6 +21,8 @@ public class TARDE extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTable table;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -107,5 +109,18 @@ public class TARDE extends JFrame {
 		btnIr.setBounds(848, 243, 89, 23);
 		panel.add(btnIr);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }

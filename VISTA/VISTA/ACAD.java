@@ -24,6 +24,8 @@ public class ACAD extends JFrame {
 	private JTextField textField_3;
 	private JTable table;
 	private JTextField txtAoAcadmico;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -142,5 +144,18 @@ public class ACAD extends JFrame {
 		txtAoAcadmico.setBounds(448, 261, 203, 20);
 		panel.add(txtAoAcadmico);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }

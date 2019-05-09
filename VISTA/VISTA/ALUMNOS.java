@@ -25,6 +25,8 @@ public class ALUMNOS extends JFrame {
 	private JTextField txtExpediente;
 	private JTable table;
 	private JTextField txtRegistro;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -149,4 +151,17 @@ public class ALUMNOS extends JFrame {
 		panel.add(txtRegistro);
 		txtRegistro.setColumns(10);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 }

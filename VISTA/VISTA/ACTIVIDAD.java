@@ -30,6 +30,8 @@ public class ACTIVIDAD extends JFrame {
 	private JTable table;
 	private JTextField txtHoras;
 	private JTextField txtAoAcadmico;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -184,5 +186,18 @@ public class ACTIVIDAD extends JFrame {
 		txtAoAcadmico.setBounds(562, 261, 86, 20);
 		panel.add(txtAoAcadmico);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }

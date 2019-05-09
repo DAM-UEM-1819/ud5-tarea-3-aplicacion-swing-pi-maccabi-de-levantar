@@ -16,7 +16,8 @@ public class LISTADO extends JFrame {
 
 	private JPanel contentPane;
 	private JTable table;
-
+	private Controlador contro;
+    private Modelo mod;
 	/**
 	 * Launch the application.
 	 */
@@ -75,4 +76,17 @@ public class LISTADO extends JFrame {
 		btnImprimir.setBounds(255, 227, 89, 23);
 		contentPane.add(btnImprimir);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 }

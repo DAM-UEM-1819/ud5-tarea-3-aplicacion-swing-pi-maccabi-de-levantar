@@ -13,6 +13,8 @@ import java.awt.Color;
 public class INCORRECTO extends JFrame {
 
 	private JPanel contentPane;
+	private Controlador contro;
+    private Modelo mod;
 
 	/**
 	 * Launch the application.
@@ -50,5 +52,18 @@ public class INCORRECTO extends JFrame {
 		btnVolver.setBounds(310, 185, 89, 23);
 		contentPane.add(btnVolver);
 	}
+	public void setContro(Controlador contro) {
+
+        this.contro = contro;
+
+}
+
+public void setMod(Modelo mod) {
+
+        this.mod = mod;
+
+}
+
+
 
 }
